@@ -76,3 +76,5 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'guard-rubocop'
 end
+
+gem "rails-i18n", "~> 6.0"

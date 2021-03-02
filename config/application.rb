@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module ReservationCreneau
   class Application < Rails::Application
+    config.i18n.default_locale = :fr
+    config.time_zone = 'Paris'
     config.generators do |generate|
       generate.assets false
       generate.helper false
