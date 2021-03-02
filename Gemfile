@@ -71,3 +71,8 @@ group :development, :test do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rspec', require: false
 end
+
+group :development, :test do
+  gem 'guard-rspec', require: false
+  gem 'guard-rubocop'
+end
