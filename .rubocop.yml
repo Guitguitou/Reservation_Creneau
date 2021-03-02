@@ -9,6 +9,7 @@ AllCops:
     - 'support/**/*'
     - 'tmp/**/*'
     - 'test/**/*'
+    - 'Guardfile'
 
 Style/ConditionalAssignment:
   Enabled: false
