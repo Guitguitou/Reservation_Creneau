@@ -72,3 +72,11 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+def se_connecte_en_tant_qu_user(user = create(:user))
+  visit new_user_session_path
+  fill_in :user_email, with: user.email
+  fill_in :user_password, with: user.password
+  # La ligne ci-dessous sera à modifier lorsque l'on aura implémenté I18n
+  click_on "Log in"
+end
