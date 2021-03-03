@@ -11,6 +11,13 @@ AllCops:
     - 'test/**/*'
     - 'Guardfile'
 
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/AsciiComments:
+  AllowedChars: ['à', 'é', 'è', 'ë', 'ê', 'î', 'ï', 'ô', 'ù', 'ç', 'À', 'É', 'È', 'Ë', 'Ê', 'Î', 'Ï', 'Ô', 'Ù', 'Ç']
+
 Style/ConditionalAssignment:
   Enabled: false
 Style/StringLiterals:
@@ -34,7 +41,7 @@ Style/MissingRespondToMissing:
 Lint/MissingSuper:
   Enabled: false
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  Enabled: true
 Layout/LineLength:
   Max: 120
 Style/EmptyMethod:
