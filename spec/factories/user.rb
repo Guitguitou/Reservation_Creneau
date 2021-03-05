@@ -11,5 +11,10 @@ FactoryBot.define do
     sexe { 'Masculin' }
     type_de_jeu { 'Compétition' }
     numero_de_licence { '1783573' }
+    admin { false }
+
+    trait :administrateur do
+      admin { true }
+    end
   end
 end
