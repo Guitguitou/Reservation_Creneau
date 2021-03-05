@@ -1,0 +1,2 @@
+class Creneau < ApplicationRecord
+end
